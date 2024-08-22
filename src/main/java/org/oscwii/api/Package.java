@@ -38,7 +38,7 @@ import java.util.Map;
  * @see <a href="https://docs.oscwii.org/repository-manager/api/retrieving-contents#application-object">API Documentation</a>
  */
 public record Package(String slug, String name, String author, String[] authors, String category,
-                      String[] contributors, Description description, Map<Asset.Type, Asset> assets,
+                      String[] contributors, int downloads, Description description, Map<Asset.Type, Asset> assets,
                       EnumSet<Flag> flags, @SerializedName("package_type") String packageType,
                       List<String> peripherals, @SerializedName("release_date") long releaseDate,
                       @SerializedName("shop") ShopTitle titleInfo, List<String> subdirectories,
